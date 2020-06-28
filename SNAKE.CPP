@@ -336,7 +336,7 @@ void newgame(int ,int );
 int main()
 {
     int choice,b[4],ch,prev,i,j;
-    initgraph(&gd,&gm,"C:\YOGISOFT\C++ByYOGISOFT\C++\TC\BGI");
+    initgraph(&gd,&gm,"C:\\TC\\BGI");
     colorset();
     start();
     cleardevice();
@@ -385,7 +385,7 @@ int main()
             break;
         case 4:
             settings();
-            initgraph(&gd,&gm,"C:\YOGISOFT\C++ByYOGISOFT\C++\TC\BGI");
+            initgraph(&gd,&gm,"C:\\TC\\BGI");
             break;
         default:
             cleardevice();
@@ -875,26 +875,25 @@ void size()
                 switch(c)
                 {
                 case '1':
-                    cout<<"\n\tLeft(0-250) = ";
-                    cin>>bl;
-                    break;
-                case '2':
-                    cout<<"\n\tTop(30-170) = ";
-                    cin>>bt;
-                    break;
-                case '3':
-                    cout<<"\n\tRight(390-639) = ";
-                    cin>>br;
-                    break;
-                case '4':
-                    cout<<"\n\tBottom(300-370) = ";
-                    cin>>bb;
-                    break;
-                case 27:
-                    return;
-                }
-            } while(1);
-            break;
+		    cout<<"\n\tLeft(0-250) = ";
+		    cin>>bl;
+		    break;
+		case '2':
+		    cout<<"\n\tTop(30-170) = ";
+		    cin>>bt;
+		    break;
+		case '3':
+		    cout<<"\n\tRight(390-639) = ";
+		    cin>>br;
+		    break;
+		case '4':
+		    cout<<"\n\tBottom(300-370) = ";
+		    cin>>bb;
+		    break;
+		case 27:
+		    return;
+		}
+	    } while(1);
         case 27:
             return;
         }
